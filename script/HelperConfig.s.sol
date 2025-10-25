@@ -27,7 +27,7 @@ contract HelperConfig is Script {
         return NetworkConfig({priceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306});
     }
 
-    function  getOrCreateAnvilEthConfig() public returns (NetworkConfig memory) {
+    function getOrCreateAnvilEthConfig() public returns (NetworkConfig memory) {
         if (activeNetworkConfig.priceFeed != address(0)) return activeNetworkConfig;
 
         vm.startBroadcast();
