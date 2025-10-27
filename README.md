@@ -119,6 +119,10 @@ forge test --gas-report
    ```bash
    forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ETHERSCAN_API_KEY
    ```
+   Use keystore is best:
+   ```bash
+   forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $SEPOLIA_RPC_URL --account xxx --sender xxx --broadcast --verify --etherscan-api-key $ETHERSCAN_API_KEY
+   ```
 
 ## Security Considerations
 
@@ -153,9 +157,3 @@ Contributions are what make the open source community such an amazing place to l
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - your_email@example.com
-
-Project Link: [https://github.com/your-username/foundry-fund-me](https://github.com/your-username/foundry-fund-me)
